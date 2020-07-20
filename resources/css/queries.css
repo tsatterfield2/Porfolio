@@ -215,4 +215,7 @@
     footer {
         font-size: 110%;
     }
+    header {
+        background: center center cover no-repeat fixed;
+    }
 }

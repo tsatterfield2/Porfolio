@@ -144,12 +144,30 @@
 
     <!-- CONTACT -->
     <section class="contact-section js--contact" id="contact">
-        <div class="row">
-            <h2>Contact me</h2>
+        <div class="form">
+            <div class="row">
+                <h2>Contact me</h2>
+            </div>
         </div>
 
         <div class="row  js--wp-3">
-            <form method="post" action="#" class="contact-form">
+            <form method="post" action="mailer.php" class="contact-form">
+                <div class="row line">
+
+                    <?php
+                    if($_GET['success'] == 1) {
+                        echo "<div class=\"form-messages success\">
+                        Thank you! Your message has been sent.
+                    </div>";
+                    }
+                    if($_GET['success'] == -1) {
+                        echo "<div class=\"form-messages error\">
+                        Something went wrong. Please try again.
+                    </div>";
+                    }
+                    ?>
+                    
+                </div>
 
                 <div class="row line">
                     <div class="col span-1-of-3">
