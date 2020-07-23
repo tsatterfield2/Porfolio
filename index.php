@@ -144,7 +144,7 @@
 
     <!-- CONTACT -->
     <section class="contact-section js--contact" id="contact">
-        <div class="form">
+        <div class="form" id="form">
             <div class="row">
                 <h2>Contact me</h2>
             </div>
@@ -154,12 +154,29 @@
             <form method="post" action="mailer.php" class="contact-form">
 
 
+
+                <?php
+
+                if($_GET['success'] == 1) {
+                  echo "<div class=\"success form-messages\">
+                        Thank you! Your message has been sent.
+                    </div>";
+                }
+
+                if($_GET['success'] == -1) {
+                    echo "<div class=\"error form-messages\">
+                        An error has occured. Please check the required fields.
+                    </div>";
+                }
+
+                ?>
+
                 <div class="row line">
                     <div class="col span-1-of-3">
                         <label for="name"><span>*</span>Name: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input id="name" type="text">
+                        <input name="name" id="name" type="text" required>
                     </div>
                 </div>
 
@@ -168,16 +185,16 @@
                         <label for="email"><span>*</span>Email: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input id="email" type="text">
+                        <input name="email" id="email" type="email" required>
                     </div>
                 </div>
 
                 <div class="row line">
                     <div class="col span-1-of-3">
-                        <label for="company-name">Company name: </label>
+                        <label for="company">Company name: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input id="company-name" type="text">
+                        <input name="company" id="company" type="text">
                     </div>
                 </div>
 
@@ -209,7 +226,7 @@
                         &nbsp;
                     </div>
                     <div class="col span-2-of-3">
-                        <a href="#" class="btn submit js--no-link">Send</a>
+                        <input type="submit" class="submit btn" value="Send">
                     </div>
                 </div>
             </form>

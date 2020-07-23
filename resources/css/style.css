@@ -363,30 +363,37 @@ textarea {
     box-shadow: 2px 4px #c2c2c2;
 }
 
+.submit {
+    background-color: #e74c3c;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+    color: #eeeeee;
+    margin-top: 5px;
+    padding: 10px;
+}
+
 .col,
 .line {
     display: flex;
 }
 
-.submit {
-    margin-top: 20px;
-    width: 40%;
-}
-
 .form-messages {
     width: 60%;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .success {
     background-color: lightgreen;
+    color: #303841;
 }
 
 .error {
     background-color: #e74c3c;
+    color: #eeeeee;
 }
 
 
