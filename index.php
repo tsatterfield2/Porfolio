@@ -176,7 +176,7 @@
                         <label for="name"><span>*</span>Name: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input name="name" id="name" type="text" required>
+                        <input name="name"  id="name" class="input" type="text" required>
                     </div>
                 </div>
 
@@ -185,7 +185,7 @@
                         <label for="email"><span>*</span>Email: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input name="email" id="email" type="email" required>
+                        <input name="email" id="email" class="input" type="email" required>
                     </div>
                 </div>
 
@@ -194,7 +194,7 @@
                         <label for="company">Company name: </label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input name="company" id="company" type="text">
+                        <input name="company" class="input" id="company" type="text">
                     </div>
                 </div>
 
