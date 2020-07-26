@@ -55,21 +55,23 @@
         </nav>
 
         <!-- LANDING SCREEN -->
-        <div class="hero-text-box">
-            <h1>Hi, I'm Taylor.<br><span>Devloper, Programmer, Student</span></h1>
+
+        <div class="hero-text-box animated bounceInRight">
+            <h1>Hi, I'm Taylor.<br><span>Developer, Programmer, Student</span></h1>
             <div class="buttons">
                 <a href="#" class="btn js--scroll-to-about">About myself</a>
                 <a href="#" class="btn btn-ghost js--scroll-to-contact">Let's build something together</a>
             </div>
         </div>
+
     </header>
 
     <!-- ABOUT -->
     <section class="about-section js--about" id="about">
         <div class="row">
-            <h2 class="about-me">About myself</h2>
-            <p class="description">I'm an aspiring student devevolper passionate about writing clean code and simple user interfaces that are both easy to navigate and look good. I'm located in Lincoln, Nebraska and am attending the University of Nebraska-Lincoln pursing a
-                degree in Computer Science. I'm always looking for oppurtunities. Here's some of my skills:
+            <h2 class="about-me">About Myself</h2>
+            <p class="description">I'm an aspiring student developer passionate about writing clean code and simple user interfaces that are both easy to navigate and look good. I'm located in Lincoln, Nebraska and am attending the University of Nebraska-Lincoln pursing a degree
+                in Computer Science. I'm always looking for opportunities. Here's some of my skills:
             </p>
         </div>
 
@@ -81,8 +83,8 @@
                         <h3>Static/Responsive Websites</h3>
                         <ion-icon class="talent-icon" name="laptop-outline"></ion-icon>
                     </div>
-                    <p class="talent-description">I design and create beautiful static websites using HTML, CSS, and Javascript. I also can use jQuery to add smooth transitions throughout the page. I also focus on making these pages responsive to any screen size, so that they look
-                        beautiuful on any device. </p>
+                    <p class="talent-description">I design and create beautiful static websites using HTML, CSS, and Javascript. I also use jQuery to add smooth transitions throughout the page. I focus on making these pages responsive to any screen size, so that they look beautiful
+                        on any device. </p>
                 </div>
 
                 <div class="talent">
@@ -98,7 +100,7 @@
                         <h3>Programming</h3>
                         <ion-icon class="talent-icon" name="code-slash-outline"></ion-icon>
                     </div>
-                    <p class="talent-description"> I've studied with various programming languages to create efficient programs. I'm proficient in Python and Java; two of the most popular languages used today.
+                    <p class="talent-description">I've studied with various programming languages to create efficient programs. I'm proficient in Python and Java; two of the most popular languages used today.
                     </p>
                 </div>
             </div>
@@ -146,7 +148,7 @@
     <section class="contact-section js--contact" id="contact">
         <div class="form" id="form">
             <div class="row">
-                <h2>Contact me</h2>
+                <h2>Contact Me</h2>
             </div>
         </div>
 
@@ -171,64 +173,64 @@
 
                 ?>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        <label for="name"><span>*</span>Name: </label>
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            <label for="name"><span>*</span>Name: </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input name="name" id="name" class="input" type="text" required>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input name="name"  id="name" class="input" type="text" required>
-                    </div>
-                </div>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        <label for="email"><span>*</span>Email: </label>
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            <label for="email"><span>*</span>Email: </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input name="email" id="email" class="input" type="email" required>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input name="email" id="email" class="input" type="email" required>
-                    </div>
-                </div>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        <label for="company">Company name: </label>
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            <label for="company">Company name: </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input name="company" class="input" id="company" type="text">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input name="company" class="input" id="company" type="text">
-                    </div>
-                </div>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        <label for="choice">Inquery: </label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="choice" id="choice">
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            <label for="choice">Inquery: </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="choice" id="choice">
                             <option disabled selected value> -- Select an Inquery -- </option>
                             <option value="Job oppurtunity">Job oppurtunity</option>
                             <option value="Help uild me a website">Help build me a website</option>
                             <option value="Other">Other</option>
                         </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        <label for="message"><span>*</span>Message: </label>
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            <label for="message"><span>*</span>Message: </label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message"></textarea>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="message" id="message"></textarea>
-                    </div>
-                </div>
 
-                <div class="row line">
-                    <div class="col span-1-of-3">
-                        &nbsp;
+                    <div class="row line">
+                        <div class="col span-1-of-3">
+                            &nbsp;
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" class="submit btn" value="Send">
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" class="submit btn" value="Send">
-                    </div>
-                </div>
             </form>
         </div>
     </section>

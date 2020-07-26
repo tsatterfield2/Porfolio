@@ -146,9 +146,9 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1250px;
-    top: 35%;
-    left: 35%;
+    width: 1200px;
+    top: 20%;
+    left: 5%;
     transform: translate(-35%, -35%);
 }
 
