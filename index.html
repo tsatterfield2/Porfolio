@@ -92,7 +92,7 @@
                         <h3>Front-End Development</h3>
                         <ion-icon class="talent-icon" name="logo-angular"></ion-icon>
                     </div>
-                    <p class="talent-description">I build front-end applications using Angular. These applications can reach out to various APIs to get valuable and relevant information to display to users. </p>
+                    <p class="talent-description">I build front-end applications using Angular. These applications can connect with various APIs to get valuable and relevant information to display to users in an interesting way. </p>
                 </div>
 
                 <div class="talent">
@@ -129,14 +129,14 @@
                     <label for="portfolio">Personal Portfolio<br>Tools: HTML, CSS, JavaScript, jQuery</label>
 
                     <figure class="project" id="portfolio">
-                        <a href="#" class="js--scroll-to-top"> <img class="project-img" src="resources/img/1.png" alt="test 1"></a>
+                        <a href="#" class="js--scroll-to-top"> <img class="project-img" src="resources/img/1.png" alt="Portfolio"></a>
                     </figure>
                 </div>
                 <div class="group">
 
-                    <label for="food-finder">Nearby Food Finder<br>Tools: HTML, CSS, TypeScript, Angular</label>
+                    <label for="food-finder">Blue River Fence<br>Tools: HTML, CSS, JavaScript</label>
                     <figure class="project" id="food-finder">
-                        <a href="#" class="js--no-link"><img class="project-img" src="resources/img/2.jpg" alt="test 2"></a>
+                        <a href="https://blueriverfence.netlify.app/" target="_blank"><img class="project-img" src="resources/img/blueriverfence.png" alt="Food Finder"></a>
                     </figure>
                 </div>
             </div>
@@ -153,84 +153,70 @@
         </div>
 
         <div class="row  js--wp-3">
-            <form method="post" action="mailer.php" class="contact-form">
+            <form method="post" class="contact-form" netlify>
 
 
 
-                <?php
 
-                if($_GET['success'] == 1) {
-                  echo "<div class=\"success form-messages\">
-                        Thank you! Your message has been sent.
-                    </div>";
-                }
 
-                if($_GET['success'] == -1) {
-                    echo "<div class=\"error form-messages\">
-                        An error has occured. Please check the required fields.
-                    </div>";
-                }
-
-                ?>
-
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            <label for="name"><span>*</span>Name: </label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input name="name" id="name" class="input" type="text" required>
-                        </div>
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        <label for="name"><span>*</span>Name: </label>
                     </div>
-
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            <label for="email"><span>*</span>Email: </label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input name="email" id="email" class="input" type="email" required>
-                        </div>
+                    <div class="col span-2-of-3">
+                        <input name="name" id="name" class="input" type="text" required>
                     </div>
+                </div>
 
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            <label for="company">Company name: </label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input name="company" class="input" id="company" type="text">
-                        </div>
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        <label for="email"><span>*</span>Email: </label>
                     </div>
+                    <div class="col span-2-of-3">
+                        <input name="email" id="email" class="input" type="email" required>
+                    </div>
+                </div>
 
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            <label for="choice">Inquery: </label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="choice" id="choice">
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        <label for="company">Company name: </label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input name="company" class="input" id="company" type="text">
+                    </div>
+                </div>
+
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        <label for="choice">Inquery: </label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="choice" id="choice">
                             <option disabled selected value> -- Select an Inquery -- </option>
                             <option value="Job oppurtunity">Job oppurtunity</option>
                             <option value="Help uild me a website">Help build me a website</option>
                             <option value="Other">Other</option>
                         </select>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            <label for="message"><span>*</span>Message: </label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" id="message"></textarea>
-                        </div>
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        <label for="message"><span>*</span>Message: </label>
                     </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </div>
 
-                    <div class="row line">
-                        <div class="col span-1-of-3">
-                            &nbsp;
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" class="submit btn" value="Send">
-                        </div>
+                <div class="row line">
+                    <div class="col span-1-of-3">
+                        &nbsp;
                     </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" class="submit btn" value="Send">
+                    </div>
+                </div>
             </form>
         </div>
     </section>
