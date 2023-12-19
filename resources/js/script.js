@@ -1,7 +1,7 @@
 $(document).ready(function () {
   /* Scroll on hero buttons */
-  $(".js--scroll-to-about").click(function () {
-    $("html, body").animate({ scrollTop: $(".js--about").offset().top }, 1000);
+  $(".js--scroll-to-experience").click(function () {
+    $("html, body").animate({ scrollTop: $(".js--experience").offset().top }, 1000);
     return false;
   });
 
@@ -84,3 +84,4 @@ $(document).ready(function () {
     nav.slideToggle(200);
   });
 });
+

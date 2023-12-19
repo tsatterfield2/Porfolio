@@ -32,15 +32,11 @@ section {
   outline: none;
 }
 
-li,
-ul {
-  list-style: none;
-}
 
 /* HEADINGS */
 h1 {
   color: #eeeeee;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   word-spacing: 4px;
   font-size: 350%;
   letter-spacing: 1px;
@@ -146,6 +142,12 @@ header {
   transform: translate(-35%, -35%);
 }
 
+header p {
+  color: #eeeeee;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
 h1 span {
   font-size: 70%;
   font-weight: 300;
@@ -184,80 +186,81 @@ h1 span {
   color: #eeeeee;
 }
 
-/* ABOUT */
-.about-section {
-  background-color: #eeeeee;
+
+/* EXPERIENCE */
+.experience-section h2 {
+  margin-top: 0;
 }
 
-.about-bold {
-  font-weight: bold;
-}
-
-.description {
-  text-align: center;
-  width: 80%;
-  margin: 0 0 0 10%;
-  line-height: 30px;
-  color: #303841;
-  padding: 15px;
-}
-
-.talents {
-  display: flex;
-  width: 110%;
-  margin-left: -5%;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 30px;
-}
-
-.talent {
-  margin: 25px;
-  padding: 10px;
-  background-color: #dddddd;
-  box-shadow: 2px 3px #c2c2c2;
-  transition: transform 0.5s, box-shadow 0.8s;
-}
-
-.talent:hover {
-  transform: scale(1.02);
-  box-shadow: 8px 10px #c2c2c2;
-}
-
-.talent-header {
-  display: flex;
-  padding: 7px;
-  background-color: #d6d6d6;
-  align-items: center;
-}
-
-.talent-icon {
-  font-size: 130%;
-  margin-left: auto;
-  color: #303841;
-}
-
-.talent-description {
-  padding: 8px;
-  line-height: 30px;
-}
-
-.lets-connect {
+.experience-group {
+  border: solid 2px rgb(197, 197, 197);
+  border-radius: 2%;
   width: 70%;
-  padding-right: 20px;
-  margin: 50px 0 0 22.5%;
+  margin-left: 15%;
+  margin-bottom: 15px;
 }
 
-.lets-connect h3 {
-  text-align: end;
+.experience-group-header {
+  display: flex;
 }
 
-.lets-connect .btn {
-  margin: 10px 0 0 auto;
+.experience-skills-responsibilities {
+display: flex;
+padding: 15px;
+}
+
+.skills-title::after {
   display: block;
-  width: 25%;
-  text-align: center;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 37.5%;
+  margin-top: 5px;
 }
+
+.responsibilities-title::after {
+  display: block;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 13%;
+  margin-top: 5px;
+}
+
+.experience-skills {
+  width: 150px;
+  margin-right: 50px;
+}
+
+.experience-skills li {
+  list-style: none;
+}
+
+.experience-responsibilities{
+  width: 100%;
+}
+
+.experience-point {
+  background-color: rgb(197, 197, 197);
+  width: 100%;
+  padding: 20px;
+}
+
+.experience-point-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-role {
+  font-weight: normal;
+}
+
+.work-img {
+  width: 75px;
+  height: 75px;
+  align-self: center;
+}
+
 
 /* PROJECTS */
 .project-section {
@@ -281,6 +284,10 @@ h1 span {
   margin-bottom: 50px;
 }
 
+.group {
+  width: 90%;
+}
+
 .project-section label {
   font-size: 90%;
   padding: 2px;
@@ -291,7 +298,6 @@ h1 span {
 
 .project {
   background-color: #000000;
-  border-radius: 15%;
   margin: 20px;
   transition: all 0.5s;
   display: flex;
@@ -302,28 +308,56 @@ h1 span {
 .project a:active,
 .project a:visited,
 .project a:hover {
-  border-radius: 15%;
 }
 
 .project:hover {
-  border-radius: 10%;
 }
 
 .project-img {
   max-width: 500px;
   max-height: 400px;
+  min-width: 400px;
+  min-height: 250px;
   width: 100%;
   height: 100%;
   opacity: 0.6;
   transition: all 0.5s;
-  border-radius: 15%;
 }
 
 .project-img:hover {
   opacity: 1;
-  border-radius: 10%;
 }
 
+.project-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.project-text {
+  align-self: center;
+  color: #eeeeee;
+  width: auto;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-title::after {
+  display: block;
+  height: 2px;
+  background-color: #e74c3c;
+  content: " ";
+  width: 40%;
+  margin-top: 5px;
+  margin-left: 30%;
+}
+
+.tools {
+  font-weight: normal;
+}
 /* CONTACT */
 .contact-section {
   text-align: center;
@@ -475,7 +509,6 @@ footer {
 
 ::-webkit-scrollbar-thumb {
   background: #e74c3c;
-  border-radius: 15%;
 }
 
 ::-webkit-scrollbar-thumb:hover {
