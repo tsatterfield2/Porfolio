@@ -32,7 +32,6 @@ section {
   outline: none;
 }
 
-
 /* HEADINGS */
 h1 {
   color: #eeeeee;
@@ -82,6 +81,7 @@ nav {
   color: #eeeeee;
   font-weight: 400;
   font-size: 150%;
+  margin-bottom: 0;
 }
 
 .name-brand:after {
@@ -155,6 +155,15 @@ h1 span {
   word-spacing: 2px;
 }
 
+header h3 {
+  font-size: 150%;
+  font-weight: 300;
+  letter-spacing: normal;
+  word-spacing: 2px;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
 .btn:link,
 .btn:visited {
   color: #eeeeee;
@@ -186,7 +195,6 @@ h1 span {
   color: #eeeeee;
 }
 
-
 /* EXPERIENCE */
 .experience-section h2 {
   margin-top: 0;
@@ -194,7 +202,6 @@ h1 span {
 
 .experience-group {
   border: solid 2px rgb(197, 197, 197);
-  border-radius: 2%;
   width: 70%;
   margin-left: 15%;
   margin-bottom: 15px;
@@ -205,8 +212,8 @@ h1 span {
 }
 
 .experience-skills-responsibilities {
-display: flex;
-padding: 15px;
+  display: flex;
+  padding: 15px;
 }
 
 .skills-title::after {
@@ -236,7 +243,7 @@ padding: 15px;
   list-style: none;
 }
 
-.experience-responsibilities{
+.experience-responsibilities {
   width: 100%;
 }
 
@@ -255,12 +262,11 @@ padding: 15px;
   font-weight: normal;
 }
 
-.work-img {
+.experience-img {
   width: 75px;
   height: 75px;
   align-self: center;
 }
-
 
 /* PROJECTS */
 .project-section {
@@ -304,15 +310,6 @@ padding: 15px;
   height: 75%;
 }
 
-.project a:link,
-.project a:active,
-.project a:visited,
-.project a:hover {
-}
-
-.project:hover {
-}
-
 .project-img {
   max-width: 500px;
   max-height: 400px;
@@ -332,8 +329,6 @@ padding: 15px;
   display: flex;
   justify-content: space-around;
 }
-
-
 
 .project-text {
   align-self: center;
@@ -355,9 +350,10 @@ padding: 15px;
   margin-left: 30%;
 }
 
-.tools {
+.project-tools {
   font-weight: normal;
 }
+
 /* CONTACT */
 .contact-section {
   text-align: center;
